@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root{
+  --mainFont: "Playfair Display", serif;
+  --scandFont: "Quicksand", sans-serif;
+  --mainColor:rgb(44, 152, 240) ;
+}

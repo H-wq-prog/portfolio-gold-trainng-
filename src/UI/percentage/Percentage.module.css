@@ -1,0 +1,41 @@
+.perc{
+    position: relative;
+    background-color:#f2f3f7;
+    height: 6px;
+    width: 100%;
+    margin: 15px 0 0 0 ;
+}
+
+.perc::after{
+    content: "";
+    position: absolute;
+    width:var(--percentWidth);
+    height: 6px;
+    background-color: var(--colorAfter);
+    top: 0;
+}
+
+.perc::before{
+    content:var(--percentContent);
+    color: var(--colorAfter);
+    position: absolute;
+    width: var(--percentWidth);
+    display: flex;
+    justify-content: end;
+    top: -30px;
+    left: 18px;
+    font-weight: 500;
+
+
+    
+}
+
+.cercl::after{
+    content: "";
+        position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--colorAfter);
+    border-radius: 50%;
+    top: -3px;
+}

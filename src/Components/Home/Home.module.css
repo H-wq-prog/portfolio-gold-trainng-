@@ -1,0 +1,66 @@
+.container{
+    position: relative;
+    inset:0;
+    opacity: 0;
+    animation:slider 10s infinite;
+
+}
+.container .content{
+    width: fit-content;
+    height: 350px;
+    transform: translate(50%,90%);
+}
+.image{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.image img{
+    width: 100%;
+    height: 100vh;
+}
+
+.content h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-family: var(--scandFont);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content button{
+    margin: 20px 0 0 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    border: .5px solid black;
+}
+
+.first{
+    animation-delay:0s;
+
+}
+
+.second{
+    animation-delay:5s;
+
+}
+
+@keyframes slider {
+  0%, 5% {
+    opacity: 0;
+  }
+
+  10%, 45% {
+    opacity: 1;
+  }
+
+  50%, 100% {
+    opacity: 0;
+    display:none;
+  }
+}

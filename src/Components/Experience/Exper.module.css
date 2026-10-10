@@ -1,0 +1,16 @@
+.content {
+    height: fit-content;
+    margin: 0 0 0 20px;
+    left: 5%;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #eee;
+    height: 100%;
+    top: 0;
+    left: -6%;
+    z-index: -1;
+}

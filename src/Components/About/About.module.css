@@ -1,0 +1,24 @@
+.aboutSpan{
+    letter-spacing: 9px;
+    color: #999;
+
+
+}
+
+.content h2{
+    letter-spacing: 9px;
+    color: #000;
+    margin: 25px 0;
+    font-family: var(--mainFont);
+}
+
+.content p{
+    font-family: var(--scandFont);
+    font-weight: 400;
+    color: #000000b3;
+    font-size: 15px;
+}
+
+.pragrafspan{
+    font-weight: bolder;
+}

@@ -1,0 +1,63 @@
+.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    height: 100vh;
+
+}
+
+.image {
+    margin: 100px 0 30px 0;
+    width: 150px;
+    height: 150px;
+    background-image: url("../../assets/about-BgAkqdr2.jpg");
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.content h1 {
+    font-family: var(--mainFont);
+    color: #000;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.content p {
+    font-family: var(--scandFont);
+    text-transform: uppercase;
+    width: 80%;
+
+
+}
+
+.content p span {
+    color: var(--mainColor);
+}
+
+.content ul li {
+    position: relative;
+    width: fit-content;
+    
+
+}
+
+
+.content ul li::after {
+    content: '';
+    background-color: var(--mainColor);
+    width: 0%;
+    height: 1.5px;
+    position: absolute;
+    bottom: -4px;
+    left: 0%;
+    transition: all .5s ease-in-out;
+
+}
+
+.content ul li:hover::after {
+    width: 100%;
+}
+
+.content ul li a:focus{
+    color: var(--mainColor);
+}
